@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Taller presencial para crear contenido con intención. Ven con bloqueo creativo y sal con ideas listas para grabar. Sábado 25 de julio." />
+  <title>Desbloquea tus ideas — Taller presencial con Valen</title>
+
+  <!-- Favicon placeholder: reemplaza con tu propio favicon -->
+  <!-- <link rel="icon" type="image/png" href="favicon.png" /> -->
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <!-- ⚠️ EDITA: pon tu logo como logo.png en la misma carpeta. Si no tienes el archivo, se muestra "Vh*" como texto. -->
+      <a href="#inicio" class="nav-logo">
+        <img src="logo.png" alt="Valen — Vh*" height="36"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';" />
+        <span style="display:none;">Vh<em style="color:var(--naranja);font-style:normal;">*</em></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#para-quien">Para quién es</a></li>
+        <li><a href="#temario">Temario</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li>
+          <!-- ⚠️ EDITA: reemplaza TU_NUMERO con tu número en formato internacional, sin + ni espacios
+               Ejemplo: 573001234567 para Colombia -->
+          <a href="https://wa.me/573104704939?text=Hola%20Valen%2C%20quiero%20reservar%20mi%20cupo%20para%20el%20taller%20Desbloquea%20tus%20ideas%20del%20s%C3%A1bado%2025%20de%20julio.%20%C2%BFMe%20env%C3%ADas%20la%20informaci%C3%B3n%20de%20pago%3F"
+             class="btn btn-primary nav-cta" target="_blank" rel="noopener">
+            Reservar cupo
+          </a>
+        </li>
+      </ul>
+
+      <!-- Hamburger button for mobile -->
+      <button class="nav-hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile drawer menu -->
+  <div class="nav-drawer" id="nav-drawer">
+    <button class="nav-drawer-close" id="drawer-close" aria-label="Cerrar menú">✕</button>
+    <a href="#inicio"      onclick="closeDrawer()">Inicio</a>
+    <a href="#para-quien"  onclick="closeDrawer()">Para quién es</a>
+    <a href="#temario"     onclick="closeDrawer()">Temario</a>
+    <a href="#sobre-mi"    onclick="closeDrawer()">Sobre mí</a>
+    <!-- ⚠️ EDITA: mismo número de WhatsApp que arriba -->
+    <a href="https://wa.me/573104704939?text=Hola%20Valen%2C%20quiero%20reservar%20mi%20cupo%20para%20el%20taller%20Desbloquea%20tus%20ideas%20del%20s%C3%A1bado%2025%20de%20julio.%20%C2%BFMe%20env%C3%ADas%20la%20informaci%C3%B3n%20de%20pago%3F"
+       class="btn btn-primary" target="_blank" rel="noopener" onclick="closeDrawer()">
+      Reservar cupo
+    </a>
+  </div>
+
+
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <section class="hero" id="inicio">
+
+    <div class="container">
+      <div class="hero-grid">
+
+        <!-- LEFT: Copy -->
+        <div class="hero-left fade-in">
+          <span class="eyebrow">✦ Taller presencial</span>
+
+          <h1 class="hero-title">
+            Desbloquea<br>
+            <em>tus ideas</em>
+          </h1>
+
+          <p class="hero-subtitle">
+            Un espacio práctico de 3 horas para activar tu creatividad,<br>
+            ordenar tus ideas y salir con contenido listo para crear.
+          </p>
+
+          <!-- Detalles rápidos -->
+          <div class="hero-details">
+            <span class="detail-pill">
+              <!-- Calendario icon -->
+              <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="3" width="14" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M5 1v4M11 1v4M1 7h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              Sábado 25 de julio
+            </span>
+            <span class="detail-pill">
+              <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.5"/><path d="M8 4.5V8l2.5 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              3:00 p.m. – 6:00 p.m.
+            </span>
+            <span class="detail-pill">
+              <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 1.5C5.51 1.5 3.5 3.51 3.5 6c0 3.75 4.5 8.5 4.5 8.5s4.5-4.75 4.5-8.5c0-2.49-2.01-4.5-4.5-4.5Z" stroke="currentColor" stroke-width="1.5"/><circle cx="8" cy="6" r="1.5" stroke="currentColor" stroke-width="1.2"/></svg>
+              Presencial · Lugar por confirmar
+            </span>
+            <span class="detail-pill">
+              <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 12a6 6 0 1 1 12 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="8" cy="6" r="2.5" stroke="currentColor" stroke-width="1.5"/></svg>
+              Solo 10 cupos
+            </span>
+          </div>
+
+          <!-- Precio -->
+          <div class="hero-price-block">
+            <span class="price-preventa">$230.000 COP</span>
+            <span class="price-label">PREVENTA</span>
+            <span class="price-full">$280.000</span>
+          </div>
+
+          <!-- CTAs -->
+          <div class="hero-cta-group">
+            <!-- ⚠️ EDITA: reemplaza TU_NUMERO -->
+            <a href="https://wa.me/573104704939?text=Hola%20Valen%2C%20quiero%20reservar%20mi%20cupo%20para%20el%20taller%20Desbloquea%20tus%20ideas%20del%20s%C3%A1bado%2025%20de%20julio.%20%C2%BFMe%20env%C3%ADas%20la%20informaci%C3%B3n%20de%20pago%3F"
+               class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+              <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+              Quiero reservar mi cupo
+            </a>
+            <!-- ⚠️ EDITA: reemplaza TU_NUMERO -->
+            <a href="https://wa.me/573104704939?text=Hola%20Valen%2C%20me%20interesa%20el%20taller%20Desbloquea%20tus%20ideas%2C%20%C2%BFpuedes%20enviarme%20m%C3%A1s%20informaci%C3%B3n%3F"
+               class="btn btn-secondary" target="_blank" rel="noopener">
+              Quiero más información
+            </a>
+          </div>
+
+          <p class="hero-note">
+            <strong>Incluye:</strong> workbook impreso, ejercicios guiados, banco de hooks, snack, agua/bebida y revisión grupal de ideas.
+          </p>
+        </div>
+
+        <!-- RIGHT: Visual -->
+        <div class="hero-right fade-in delay-2">
+          <div class="hero-visual">
+            <div class="hero-img-frame">
+              <!-- ⚠️ EDITA: reemplaza hero.jpg con tu foto o imagen del taller.
+                   Tamaño recomendado: 600x750px. Si no tienes foto aún, puedes eliminar el <img> y dejar el div. -->
+              <img src="Hero.jpg" alt="Valen — estratega de contenido" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="hero-img-placeholder" style="display:none;">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="18" r="10" stroke="#D7C4AA" stroke-width="2"/><path d="M6 42c0-9.94 8.06-18 18-18s18 8.06 18 18" stroke="#D7C4AA" stroke-width="2" stroke-linecap="round"/></svg>
+                <span>Tu foto aquí</span>
+              </div>
+            </div>
+
+            <!-- Floating badges -->
+            <div class="hero-badge cupos">✦ Solo 10 cupos</div>
+            <div class="hero-badge fecha">25 de julio · Presencial</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECCIÓN PROBLEMA
+       ============================================================ -->
+  <section class="section-problema" id="problema">
+
+    <div class="container">
+      <div class="problema-card fade-in">
+
+        <h2>¿Sientes que quieres crear contenido, pero no sabes qué publicar?</h2>
+
+        <p>
+          Puede que tengas audios guardados, ideas sueltas, referencias, tendencias y mil notas en el celular…
+          pero cuando llega el momento de grabar, te quedas en blanco.
+        </p>
+        <p>
+          Y no, no siempre es falta de creatividad. Muchas veces lo que falta es un sistema para encontrar,
+          ordenar y convertir tus ideas en contenido con intención.
+        </p>
+
+        <div class="sticker">No te faltan ideas. Te falta claridad.</div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       QUÉ ES EL TALLER
+       ============================================================ -->
+  <section class="section-que-es" id="que-es">
+    <div class="container">
+      <div class="que-es-grid">
+
+        <!-- Content -->
+        <div class="que-es-content fade-in">
+          <span class="eyebrow">✦ El taller</span>
+          <h2>Este taller es para desbloquear tus ideas y darles dirección</h2>
+          <p>
+            <em>Desbloquea tus ideas</em> es un taller presencial de 3 horas donde vas a trabajar
+            tu creatividad, tu estrategia y tu forma de comunicar para salir con ideas claras,
+            hooks y un plan simple de contenido.
+          </p>
+          <p>
+            No es una clase llena de teoría. Es un espacio práctico para escribir, pensar,
+            aterrizar ideas y construir contenido desde tu vida, tu experiencia y tu marca.
+          </p>
+
+          <div class="callout-box">
+            <!-- Arrow doodle -->
+            <svg style="position:absolute;top:-18px;right:24px;opacity:0.5" width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+              <path d="M8 28C16 12 26 10 28 8M28 8l-6 1M28 8l-1 6" stroke="#FFA063" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p>La idea no es que salgas solo motivada. La idea es que salgas con claridad y contenido accionable.</p>
+          </div>
+        </div>
+
+        <!-- Visual -->
+        <div class="que-es-visual fade-in delay-2">
+          <div class="que-es-img-frame">
+            <!-- ⚠️ EDITA: reemplaza taller.jpg con foto del taller, workbook o espacio creativo -->
+            <img src="Taller.jpg" alt="Espacio del taller" onerror="this.style.display='none';" />
+            <!-- Placeholder gradient si no hay imagen -->
+            <div style="width:100%;height:100%;background:linear-gradient(135deg,#EDE5D8,#D7C4AA);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-style:italic;color:#7A5C44;font-size:0.9rem;">
+              Foto del taller
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       PARA QUIÉN ES
+       ============================================================ -->
+  <section class="section-para-quien" id="para-quien">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="eyebrow">✦ Para quién es</span>
+        <h2>Este taller es para ti si…</h2>
+      </div>
+
+      <div class="cards-grid">
+
+        <div class="who-card fade-in delay-1">
+          <div class="who-card-icon">✏️</div>
+          <h3>Te bloqueas al crear</h3>
+          <p>Sientes que quieres publicar, pero cuando llega el momento no sabes qué decir.</p>
+        </div>
+
+        <div class="who-card fade-in delay-2">
+          <div class="who-card-icon">📱</div>
+          <h3>Tienes ideas sueltas</h3>
+          <p>Guardas audios, referencias y notas, pero no sabes cómo ordenarlas.</p>
+        </div>
+
+        <div class="who-card fade-in delay-3">
+          <div class="who-card-icon">🌀</div>
+          <h3>Publicas sin estrategia</h3>
+          <p>Subes contenido, pero no sabes si tiene intención o conecta con tu objetivo.</p>
+        </div>
+
+        <div class="who-card fade-in delay-1">
+          <div class="who-card-icon">💛</div>
+          <h3>Tienes una marca o servicio</h3>
+          <p>Quieres comunicar mejor lo que haces, lo que sabes o lo que vendes.</p>
+        </div>
+
+        <div class="who-card fade-in delay-2">
+          <div class="who-card-icon">🌸</div>
+          <h3>Quieres ser más auténtica</h3>
+          <p>Quieres crear contenido desde tu experiencia, sin copiar tendencias todo el tiempo.</p>
+        </div>
+
+        <div class="who-card fade-in delay-3">
+          <div class="who-card-icon">🧭</div>
+          <h3>Necesitas claridad</h3>
+          <p>Quieres salir con ideas reales y un plan simple para empezar a publicar.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       QUÉ VAS A LOGRAR
+       ============================================================ -->
+  <section class="section-logros" id="logros">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="eyebrow">✦ Lo que te llevas</span>
+        <h2>Vas a salir con:</h2>
+      </div>
+
+      <div class="logros-grid">
+
+        <div class="logro-item fade-in delay-1">
+          <div class="logro-check">
+            <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 7l4 4 6-6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <p>Una mini estrategia de contenido.</p>
+        </div>
+
+        <div class="logro-item fade-in delay-2">
+          <div class="logro-check">
+            <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 7l4 4 6-6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <p>Un banco de ideas listas para desarrollar.</p>
+        </div>
+
+        <div class="logro-item fade-in delay-1">
+          <div class="logro-check">
+            <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 7l4 4 6-6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <p>Hooks para empezar tus videos o publicaciones.</p>
+        </div>
+
+        <div class="logro-item fade-in delay-2">
+          <div class="logro-check">
+            <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 7l4 4 6-6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <p>Claridad sobre tus temas principales.</p>
+        </div>
+
+        <div class="logro-item fade-in delay-1">
+          <div class="logro-check">
+            <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 7l4 4 6-6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <p>Un plan de contenido de 7 días.</p>
+        </div>
+
+        <div class="logro-item fade-in delay-2">
+          <div class="logro-check">
+            <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 7l4 4 6-6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <p>Más confianza para crear sin depender solo de tendencias.</p>
+        </div>
+
+      </div>
+
+      <div class="logros-cierre fade-in">
+        <p>Vas a pasar de sentir que no sabes qué publicar a tener ideas claras, estratégicas y listas para convertir en contenido.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       QUÉ INCLUYE
+       ============================================================ -->
+  <section class="section-incluye" id="incluye">
+    <div class="container">
+
+      <div class="incluye-card fade-in">
+        <div class="incluye-header">
+          <h2>Tu cupo incluye:</h2>
+          <p>Todo lo que necesitas para tener una experiencia completa.</p>
+        </div>
+
+        <div class="incluye-item">
+          <div class="incluye-dot"></div>
+          <span>Taller presencial guiado</span>
+        </div>
+        <div class="incluye-item">
+          <div class="incluye-dot"></div>
+          <span>Workbook impreso</span>
+        </div>
+        <div class="incluye-item">
+          <div class="incluye-dot"></div>
+          <span>Ejercicios prácticos de creatividad</span>
+        </div>
+        <div class="incluye-item">
+          <div class="incluye-dot"></div>
+          <span>Banco de hooks</span>
+        </div>
+        <div class="incluye-item">
+          <div class="incluye-dot"></div>
+          <span>Mini estrategia de contenido</span>
+        </div>
+        <div class="incluye-item">
+          <div class="incluye-dot"></div>
+          <span>Plan de acción de 7 días</span>
+        </div>
+        <div class="incluye-item">
+          <div class="incluye-dot"></div>
+          <span>Revisión grupal de ideas</span>
+        </div>
+        <div class="incluye-item">
+          <div class="incluye-dot"></div>
+          <span>Snack o comida ligera</span>
+        </div>
+        <div class="incluye-item">
+          <div class="incluye-dot"></div>
+          <span>Agua o bebida</span>
+        </div>
+        <div class="incluye-item">
+          <div class="incluye-dot"></div>
+          <span>Espacio de networking</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       TEMARIO
+       ============================================================ -->
+  <section class="section-temario" id="temario">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="eyebrow">✦ Programa</span>
+        <h2>¿Qué vamos a trabajar?</h2>
+        <p>Un recorrido práctico de 3 horas para desbloquear, ordenar y crear.</p>
+      </div>
+
+      <div class="temario-list">
+
+        <div class="temario-item fade-in">
+          <div class="temario-num">01</div>
+          <div class="temario-content">
+            <h3>Bienvenida e intención del taller</h3>
+            <p>Vamos a identificar qué quieres lograr con tu contenido y qué te está bloqueando.</p>
+          </div>
+        </div>
+
+        <div class="temario-item fade-in delay-1">
+          <div class="temario-num">02</div>
+          <div class="temario-content">
+            <h3>El bloqueo creativo no es falta de talento</h3>
+            <p>Entenderás por qué te quedas sin ideas y cómo dejar de depender únicamente de la inspiración.</p>
+          </div>
+        </div>
+
+        <div class="temario-item fade-in delay-2">
+          <div class="temario-num">03</div>
+          <div class="temario-content">
+            <h3>Tu vida también es fuente de contenido</h3>
+            <p>Aprenderás a sacar ideas desde tus experiencias, errores, aprendizajes, opiniones y preguntas frecuentes.</p>
+          </div>
+        </div>
+
+        <div class="temario-item fade-in delay-1">
+          <div class="temario-num">04</div>
+          <div class="temario-content">
+            <h3>De idea suelta a contenido publicable</h3>
+            <p>Vas a convertir temas genéricos en ideas específicas, claras y fáciles de grabar.</p>
+          </div>
+        </div>
+
+        <div class="temario-item fade-in delay-2">
+          <div class="temario-num">05</div>
+          <div class="temario-content">
+            <h3>Mini estrategia para no publicar al azar</h3>
+            <p>Organizaremos tus ideas en contenido de atracción, conexión, autoridad y conversión.</p>
+          </div>
+        </div>
+
+        <div class="temario-item fade-in delay-1">
+          <div class="temario-num">06</div>
+          <div class="temario-content">
+            <h3>Banco de hooks e ideas listas</h3>
+            <p>Construirás ideas y frases de inicio para que no te quedes mirando la pantalla sin saber cómo empezar.</p>
+          </div>
+        </div>
+
+        <div class="temario-item fade-in delay-2">
+          <div class="temario-num">07</div>
+          <div class="temario-content">
+            <h3>Revisión grupal de ideas</h3>
+            <p>Trabajaremos algunas ideas en vivo para hacerlas más claras, estratégicas y grabables.</p>
+          </div>
+        </div>
+
+        <div class="temario-item fade-in delay-1">
+          <div class="temario-num">08</div>
+          <div class="temario-content">
+            <h3>Plan de acción de 7 días</h3>
+            <p>Te vas con un plan simple para empezar a crear después del taller.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       PRECIO / INFORMACIÓN
+       ============================================================ -->
+  <section class="section-precio" id="reservar-cupo">
+    <div class="container">
+
+      <div class="precio-card fade-in">
+        <h2 class="precio-titulo">Información del taller</h2>
+        <p class="precio-subtitulo">Desbloquea tus ideas — Taller presencial</p>
+
+        <!-- Info grid -->
+        <div class="precio-info-grid">
+          <div class="precio-info-item">
+            <div class="label">Fecha</div>
+            <!-- ⚠️ EDITA: cambia la fecha si cambia -->
+            <div class="value">Sábado 25 de julio</div>
+          </div>
+          <div class="precio-info-item">
+            <div class="label">Horario</div>
+            <div class="value">3:00 p.m. – 6:00 p.m.</div>
+          </div>
+          <div class="precio-info-item">
+            <div class="label">Duración</div>
+            <div class="value">3 horas</div>
+          </div>
+          <div class="precio-info-item">
+            <div class="label">Formato</div>
+            <div class="value">Presencial</div>
+          </div>
+          <div class="precio-info-item">
+            <div class="label">Cupos</div>
+            <div class="value">10 personas</div>
+          </div>
+          <div class="precio-info-item">
+            <div class="label">Lugar</div>
+            <!-- ⚠️ EDITA: actualiza cuando tengas el lugar confirmado -->
+            <div class="value">Por confirmar</div>
+          </div>
+        </div>
+
+        <!-- Precio block -->
+        <div class="precio-block">
+          <div class="precio-tag">PREVENTA</div>
+          <div class="precio-main">$230.000 COP</div>
+          <div class="precio-full-text">Precio full: <s>$280.000 COP</s></div>
+        </div>
+
+        <p class="precio-urgencia">✦ Solo 10 cupos · Preventa hasta el 7 de julio</p>
+
+        <!-- ⚠️ EDITA: reemplaza TU_NUMERO -->
+        <a href="https://wa.me/573104704939?text=Hola%20Valen%2C%20quiero%20reservar%20mi%20cupo%20para%20el%20taller%20Desbloquea%20tus%20ideas%20del%20s%C3%A1bado%2025%20de%20julio.%20%C2%BFMe%20env%C3%ADas%20la%20informaci%C3%B3n%20de%20pago%3F"
+           class="btn btn-primary btn-lg" target="_blank" rel="noopener" style="width:100%;justify-content:center;">
+          <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+          Quiero reservar mi cupo
+        </a>
+
+        <p class="precio-nota">⏳ Preventa válida hasta el <strong>7 de julio</strong>. Después de esa fecha el precio sube a $280.000 COP. La reserva se confirma con el pago del cupo.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SOBRE MÍ
+       ============================================================ -->
+  <section class="section-sobre-mi" id="sobre-mi">
+    <div class="container">
+
+      <div class="sobre-mi-grid">
+
+        <!-- Foto -->
+        <div class="sobre-mi-foto fade-in">
+          <div class="sobre-mi-img">
+            <!-- ⚠️ EDITA: reemplaza valen.jpg con tu foto. Tamaño ideal: 600x800px, orientación vertical -->
+            <img src="Valen.jpg" alt="Valentina — estratega de contenido" onerror="this.style.display='none';" />
+            <!-- Placeholder si no hay foto -->
+            <div style="width:100%;height:100%;background:linear-gradient(160deg,#EDE5D8,#D7C4AA);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-style:italic;color:#7A5C44;font-size:0.9rem;">
+              Tu foto aquí
+            </div>
+          </div>
+          <div class="sobre-mi-firma">Valen ✦</div>
+        </div>
+
+        <!-- Contenido -->
+        <div class="sobre-mi-content fade-in delay-2">
+          <span class="eyebrow">✦ Sobre mí</span>
+          <h2>Hola, soy Valen.</h2>
+
+          <p>
+            Soy estratega de contenido y trabajo ayudando a marcas, emprendedoras y creadoras
+            a comunicar mejor sus ideas en redes sociales.
+          </p>
+          <p>
+            Durante mi experiencia creando estrategias, guiones, campañas y contenido para
+            diferentes proyectos, he entendido algo: muchas personas no están bloqueadas porque
+            no tengan nada que decir, sino porque no saben cómo ordenar lo que ya saben, viven y piensan.
+          </p>
+          <p>
+            Por eso creé este taller. Para ayudarte a dejar de crear desde el caos, activar tu
+            creatividad y construir ideas que tengan sentido para ti, para tu marca y para las
+            personas a las que quieres llegar.
+          </p>
+          <p>
+            Mi enfoque mezcla creatividad, estrategia y practicidad: quiero que salgas del taller
+            con ideas reales, no solo con motivación.
+          </p>
+
+          <div class="sobre-mi-puntos">
+            <h4>Lo que hago</h4>
+            <ul>
+              <li>He trabajado en estrategia de contenido para marcas, negocios y marcas personales.</li>
+              <li>Creo guiones, conceptos, campañas y estructuras de contenido para redes sociales.</li>
+              <li>Mi especialidad es convertir ideas sueltas en contenido claro, estratégico y accionable.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FAQ
+       ============================================================ -->
+  <section class="section-faq" id="faq">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="eyebrow">✦ Preguntas frecuentes</span>
+        <h2>¿Tienes dudas?</h2>
+      </div>
+
+      <div class="faq-list">
+
+        <div class="faq-item fade-in">
+          <button class="faq-question" aria-expanded="false">
+            ¿Necesito tener experiencia creando contenido?
+            <svg class="faq-arrow" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>No. El taller está pensado para personas que quieren ordenar sus ideas y empezar a crear con más intención, sin importar su nivel.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in delay-1">
+          <button class="faq-question" aria-expanded="false">
+            ¿Debo tener una marca o emprendimiento?
+            <svg class="faq-arrow" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>No necesariamente, pero sí es ideal si quieres crear contenido para una marca personal, servicio, negocio o proyecto.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in delay-2">
+          <button class="faq-question" aria-expanded="false">
+            ¿Tengo que grabar durante el taller?
+            <svg class="faq-arrow" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>No. El foco será pensar, escribir, ordenar ideas y construir contenido. Puedes salir con ideas listas para grabar después.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in delay-1">
+          <button class="faq-question" aria-expanded="false">
+            ¿Qué debo llevar?
+            <svg class="faq-arrow" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>Tu celular, algo para tomar notas si quieres y muchas ganas de trabajar tus ideas. El workbook impreso estará incluido.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in delay-2">
+          <button class="faq-question" aria-expanded="false">
+            ¿El cupo es reembolsable?
+            <svg class="faq-arrow" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>El cupo no es reembolsable, pero puedes transferirlo a otra persona si no puedes asistir.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in delay-1">
+          <button class="faq-question" aria-expanded="false">
+            ¿Cómo reservo mi cupo?
+            <svg class="faq-arrow" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>Escríbeme por WhatsApp y te envío los datos de pago. Tu cupo queda confirmado una vez realizado el pago.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CTA FINAL
+       ============================================================ -->
+  <section class="section-cta-final" id="reservar">
+
+    <div class="container fade-in">
+      <h2>Ven con bloqueo creativo y sal con ideas<br><em>listas para grabar.</em></h2>
+
+      <p>
+        Desbloquea tus ideas es un taller presencial para dejar de publicar al azar,
+        activar tu creatividad y crear contenido con más intención.
+      </p>
+
+      <div class="cta-final-detalles">
+        <span class="cta-detail-pill">📅 Sábado 25 de julio</span>
+        <span class="cta-detail-pill">🕒 3:00 p.m. – 6:00 p.m.</span>
+        <span class="cta-detail-pill">✦ Solo 10 cupos</span>
+        <span class="cta-detail-pill">💛 Preventa: $230.000 COP</span>
+      </div>
+
+      <div class="cta-final-btns">
+        <!-- ⚠️ EDITA: reemplaza TU_NUMERO -->
+        <a href="https://wa.me/573104704939?text=Hola%20Valen%2C%20quiero%20reservar%20mi%20cupo%20para%20el%20taller%20Desbloquea%20tus%20ideas%20del%20s%C3%A1bado%2025%20de%20julio.%20%C2%BFMe%20env%C3%ADas%20la%20informaci%C3%B3n%20de%20pago%3F"
+           class="btn btn-light btn-lg" target="_blank" rel="noopener">
+          <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+          Reservar mi cupo
+        </a>
+        <!-- ⚠️ EDITA: reemplaza TU_NUMERO -->
+        <a href="https://wa.me/573104704939?text=Hola%20Valen%2C%20me%20interesa%20el%20taller%20Desbloquea%20tus%20ideas%2C%20%C2%BFpuedes%20enviarme%20m%C3%A1s%20informaci%C3%B3n%3F"
+           class="btn btn-secondary" style="border-color:rgba(248,244,238,0.4);color:#F8F4EE" target="_blank" rel="noopener">
+          Quiero más información
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <!-- ⚠️ EDITA: cambia el año, nombre y redes si quieres -->
+      <p>© 2025 Valen — Estratega de contenido · <a href="https://instagram.com/" target="_blank" rel="noopener" style="color:rgba(248,244,238,0.5);">@valen</a></p>
+    </div>
+  </footer>
+
+
+  <!-- ============================================================
+       WHATSAPP FLOATING BUTTON
+       ============================================================ -->
+  <!-- ⚠️ EDITA: reemplaza TU_NUMERO -->
+  <a class="wa-float"
+     href="https://wa.me/573104704939?text=Hola%20Valen%2C%20quiero%20reservar%20mi%20cupo%20para%20el%20taller%20Desbloquea%20tus%20ideas%20del%20s%C3%A1bado%2025%20de%20julio.%20%C2%BFMe%20env%C3%ADas%20la%20informaci%C3%B3n%20de%20pago%3F"
+     target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+    </svg>
+  </a>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
